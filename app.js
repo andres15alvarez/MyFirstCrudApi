@@ -9,10 +9,11 @@ const app = express();
 
 app.use(bodyParser.json());
 
+// costumer(id int not null auto_increment, name varchar(30), city varchar(50));
 const con = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: '068856187030',
+    password: '',
     database: 'nodeapi'
 });
 
